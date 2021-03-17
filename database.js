@@ -1,8 +1,11 @@
 const mongoose = require('mongoose');
 
+const connectionString =
+  process.env.DB_CONNECTION ||
+  'mongodb+srv://Multiplica:multiplica123@coloresdb.5zfcd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 //Connecting to db
 mongoose
-  .connect(process.env.DB_CONNECTION, {
+  .connect(connectionString, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
