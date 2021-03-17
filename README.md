@@ -1,2 +1,1 @@
-# colores-app-backend
-Backend technical test for Multiplica Talent
+And this is a readme
